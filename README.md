@@ -1,33 +1,17 @@
-> **Warning**
-> We [have decided](https://stitcher.io/blog/deprecating-spatie-dto) to stop maintaining this package.
-> 
-> Consider migrating to [spatie/laravel-data](https://spatie.be/docs/laravel-data) or [cuyz/valinor](https://github.com/cuyz/valinor).
->
-> Feel free to fork our code and adapt it to your needs.
-
 # Data transfer objects with batteries included
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/data-transfer-object.svg?style=flat-square)](https://packagist.org/packages/spatie/data-transfer-object)
-![Test](https://github.com/spatie/data-transfer-object/workflows/Test/badge.svg)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/data-transfer-object.svg?style=flat-square)](https://packagist.org/packages/spatie/data-transfer-object)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/chrysanthos/data-transfer-object.svg?style=flat-square)](https://packagist.org/packages/spatie/data-transfer-object)
+![Test](https://github.com/chrysanthos/data-transfer-object/workflows/Test/badge.svg)
+[![Total Downloads](https://img.shields.io/packagist/dt/chrysanthos/data-transfer-object.svg?style=flat-square)](https://packagist.org/packages/spatie/data-transfer-object)
 
+This package is a fork of the original [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) which got deprecated. It is fully backwards-compatible to the original implementation.
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require spatie/data-transfer-object
+composer require chrysanthos/data-transfer-object
 ```
-
-* **Note**: v3 of this package only supports `php:^8.0`. If you're looking for the older version, check out [v2](https://github.com/spatie/data-transfer-object/tree/v2).
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/data-transfer-object.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/data-transfer-object)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Usage
 
@@ -187,7 +171,7 @@ abstract class BaseDataTransferObject extends DataTransferObject
 
 ### Using custom caster arguments
 
-Any caster can be passed custom arguments, the built-in [`ArrayCaster` implementation](https://github.com/spatie/data-transfer-object/blob/master/src/Casters/ArrayCaster.php) is a good example of how this may be used.
+Any caster can be passed custom arguments, the built-in [`ArrayCaster` implementation](https://github.com/chrysanthos/data-transfer-object/blob/main/src/Casters/ArrayCaster.php) is a good example of how this may be used.
 
 Using named arguments when passing input to your caster will help make your code more clear, but they are not required.
 
